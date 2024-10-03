@@ -1,0 +1,109 @@
+
+/* secondary-header */
+.header-secondary{
+    height: var(--h-secondary-header);
+    background-color: var(--c-primary);
+}
+.contact-menu-link,.social-icon-link{
+    display: inline-block;
+    color: var(--c-white);
+    font-size: 14px;
+}
+/* //secondary-header */
+
+
+/* primary-header */
+.header-primary{
+    height: var(--h-primary-header);
+}
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.hidden{
+    display:none;
+}
+.nav-lists{
+    position: relative;
+    transition: var(--slow-trans-lg);
+}
+
+
+.nav-link{
+    display: inline-block;
+    color: var(--c-black);
+    font-weight:400;
+    padding: 5px;
+    position: relative;
+
+
+&::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    width:100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: var(--default-trans);
+    border-radius: var(--br-radius-sm);
+    background-image: linear-gradient(to right, #90c3fd , #ff71b8);
+    
+}
+.nav-page{
+    float: right;
+}
+
+
+&:hover::before{
+    transform: scaleX(1);
+    }
+    
+&:hover::after {
+    top: 5px;
+    transform: rotate(180deg);
+    }
+
+}
+
+.mbl-nav{
+    display: none;
+}
+/* //priamry-header */
+
+
+
+/* hover-menu */
+.submenu-lists{
+    top: calc(var(--h-primary-header) -30px);
+    width: 200px;
+    left: 0;
+    position: absolute;
+    background-color: var(--c-white);
+    transform: translateY(-30px);
+    transition: var(--slow-trans);
+    border-radius: var(--br-radius-sm);
+    box-shadow:0 0 20px  var(--c-shadow-gray);
+    visibility: hidden;
+    opacity: 0;
+}
+.submenu-link{
+    display: inline-block;
+    color: var(--c-gray);
+    font-size: 18px;
+    padding: 10px 15px;
+}
+.nav-list:hover .submenu-lists{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.submenu-list:hover{
+    background-color: var(--c-primary);
+}
+.submenu-list:hover .submenu-link{
+    color: var(--c-white);
+}
+/* ///hover-menu */

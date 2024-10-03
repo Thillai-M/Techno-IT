@@ -1,0 +1,150 @@
+
+
+
+@media only screen and (max-width:768px) {
+    .header-secondary,.nav-btn{
+        display: none;
+    }
+    .mbl-nav {
+        display: block;
+    }
+
+    .nav-lists{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding:5px;
+        flex-direction: column;
+        text-align: center;
+        background:var(--c-navy-blue);
+        gap: 0;
+        overflow: hidden;
+    }
+    .nav-link{
+        color: var(--c-white);
+    }
+    
+
+    .hero-section{
+        display: none;
+    }
+    .service-fea{
+        margin-bottom: 800px;
+    }
+    .about-section{
+        margin-top: 90px;
+    }
+    .about-container{
+        flex-wrap: wrap;
+    
+    }
+    :where(.about-fig,.about-content){
+        width: 100%;
+    }
+
+    
+    .flip-container{
+        flex-wrap: wrap;
+    
+    }
+    .flip-box{
+        width: 100%;
+    }
+
+    .product-boxs{
+        flex-wrap: wrap;
+    }
+    .product-box{
+        width: 100%;
+    }
+
+    .slide-boxs{
+        flex-wrap: wrap;
+    }
+    .slide{
+        width: 100%;
+    }
+    .typo-team{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .member-cards{
+        flex-wrap: wrap;
+    }
+    .member-card{
+        width: 100%;
+    }
+
+    .progress-dot{
+        display: none;
+    }
+    .testimonial-cards{
+        flex-wrap: wrap;
+    }
+    .testimonial-card{
+        width: 100%;
+        border: 1px solid var(--c-black);
+    }
+    .footer-cols{
+        flex-wrap: wrap;
+    }
+    .footer-col{
+        width:50%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .heading-primary{
+        font-size: 22px;
+    }
+    .heading-secondary{
+        font-size: 22px;
+    }
+    .heading-secondary-sm{
+        font-size: 22px;
+    }
+    .default-tittle{
+        font-size:18px;
+    }
+    .default-tittle-white{
+        font-size:18px;
+    }
+    .footer-col-tittle{
+        font-size: 20px;
+    }
+    .about-section{
+        margin-top: 90px;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .about-fig{
+        width: 100%;
+    }
+    .flip-box{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .product-box{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .slide{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .member-card{
+        width:100%;
+        
+    }
+    .testimonial-card{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .footer-col{
+        width:100%;
+        padding: 0 10px;
+    }
+}
+
