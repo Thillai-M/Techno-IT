@@ -3,14 +3,14 @@
 @font-face{
     font-family: "Puvi_Regular";
     font-display: swap;
-    src: url("/fonts/Zoho\ Puvi\ Regular.otf");
+    src: url("../fonts/Zoho_Puvi_Regular.otf");
 }
 
 
 @font-face{
     font-family: "Puvi_Bold";
     font-display: swap;
-    src: url("/fonts/Zoho\ Puvi\ Bold.otf");
+    src: url("../fonts/Zoho_Puvi_Bold.otf");
 }
 
 
@@ -18,5 +18,6 @@
 @font-face{
     font-family: "Puvi_Medium";
     font-display: swap;
-    src: url("/fonts/Zoho\ Puvi\ Medium.otf");
+    src: url("../fonts/Zoho_Puvi_Medium.otf");
 }
+
