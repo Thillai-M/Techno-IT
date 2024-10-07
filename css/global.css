@@ -20,6 +20,10 @@ body {
     font-family:"Puvi_Regular";
 }
 
+ul li { list-style: none; }
+a { text-decoration: none; }
+a:hover { cursor: pointer; }
+
 .fw-200{font-weight: 200;}
 
 /* ///common */
