@@ -52,9 +52,7 @@
     background-image: linear-gradient(to right, #90c3fd , #ff71b8);
     
 }
-.nav-page{
-    float: right;
-}
+
 
 
 &:hover::before{
@@ -68,9 +66,8 @@
 
 }
 
-.mbl-nav{
-    display: none;
-}
+
+
 /* //priamry-header */
 
 

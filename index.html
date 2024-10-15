@@ -10,7 +10,7 @@
 		<title>Techno &mdash; Landing Page</title>
 
 		<!-- tittle-icon -->
-		<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="./images/favicon.png" type="image/x-icon" />
 
 		<!-- css -->
 
@@ -101,15 +101,21 @@
 			<!-- header-primary -->
 			<div class="header-primary">
 				<div class="container header-container">
+					<button class="menu-btn" onclick="show_menu()">
+						<i class='bx bx-menu f22'></i>
+					</button>
+
 					<div class="logo-container">
 						<a class="D-Inblk" href="">
 							<img class="logo-img" src="./images/logo.png" alt="logo" />
 						</a>
 					</div>
-
+				
 					<div class="D-flx AI-C G-20">
-						<nav class="nav-page">
-							<ul class="nav-lists D-flx AI-C G-25" id="menu-list">
+						<nav class="menu-nav-container">
+							<div class="menu-nav-pop">
+
+							<ul class="nav-lists D-flx AI-C G-25">
 								<li class="nav-list">
 									<a class="nav-link" href="">Home</a>
 								</li>
@@ -163,12 +169,16 @@
 									<a class="nav-link" href="">Contact</a>
 								</li>
 							</ul>
+
+							
+							<button class="close-btn" onclick="hide_menu()">
+								<i class='bx bx-window-close f22'></i>
+							</button>
+						    </div>
 						</nav>
 						<div class="nav-btn"><a href="#" class="btn btn-primary">Get A Quote</a></div>
 
-						<div class="mbl-nav">
-							<button class="mbl-nav-btn" onclick="toggleMenu()"><i class="bx bx-menu f30"></i></button>
-						</div>
+					
 					</div>
 				</div>
 			</div>
@@ -779,5 +789,21 @@
 			</div>
 		</footer>
 		<!-- ///footer-sec -->
+
+			
+	<script>
+		let header_primary = document.querySelector(".header-primary");
+
+
+
+		function show_menu(){
+		header_primary.classList.add("show-header");
+		}
+
+		function hide_menu(){
+		header_primary.classList.remove("show-header");
+		}
+
+		</script>
 	</body>
 </html>

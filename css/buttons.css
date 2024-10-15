@@ -13,11 +13,20 @@
     background-size: 300% 100%;
     border-radius: var(--br-radius-sm);  
 }
-.mbl-nav-btn{
-    outline: none;
+
+.menu-btn,.close-btn{
+    display: none;
     border: none;
-    background:none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    position: absolute;
     cursor: pointer;
+
+}
+.close-btn{
+    top: 15px;
+    right: 20px;
 }
 .btn.btn-primary{
     background-image: linear-gradient(to right , var(--c-primary), var(--c-navy), var(--c-purple), var(--c-secondary));
