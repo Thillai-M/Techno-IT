@@ -6,7 +6,7 @@
         display: none;
     }
     .logo-container{
-        padding-left: 30px;
+     margin: 0 auto;
     }
     .nav-link{
         color: var(--c-white);
